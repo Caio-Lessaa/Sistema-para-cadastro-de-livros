@@ -44,4 +44,8 @@ public class LivroService {
 
         return livroResponseDTOS;
     }
+
+    public void deletarLivro(Long id) {
+        livroRepository.deleteById(id);
+    }
 }
